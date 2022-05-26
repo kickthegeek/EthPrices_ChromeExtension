@@ -1,0 +1,173 @@
+body {
+    width:500px;
+    height:400px;
+ }
+
+ @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+ h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+  }
+  p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+  }
+  .button {
+    width: 200px;
+    margin: 100px auto;
+    position: relative;
+    border: solid 2px #cbd4d9;
+    height: 55px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .button:hover .hoverBtn:before, .button:hover .hoverBtn:after {
+    opacity: 1;
+    -webkit-animation: open 0.4s;
+    /* Chrome, Safari, Opera */
+    animation: open 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-direction: normal;
+  }
+  .button:hover .hoverBtn-bottom:before, .button:hover .hoverBtn-bottom:after {
+    opacity: 1;
+    -webkit-animation: openB 0.4s;
+    /* Chrome, Safari, Opera */
+    animation: openB 0.4s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-direction: normal;
+  }
+  .button p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #587785;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    line-height: 55px;
+  }
+  .hoverBtn {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: -1px;
+  }
+  .hoverBtn:before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    opacity: 0;
+    border-top: solid 2px #517180;
+    border-left: solid 2px #517180;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 100px;
+  }
+  .hoverBtn:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    opacity: 0;
+    border-top: solid 2px #517180;
+    border-right: solid 2px #517180;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 100px;
+  }
+  .hoverBtn-bottom {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+  }
+  .hoverBtn-bottom:before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    opacity: 0;
+    height: 55px;
+    border-bottom: solid 2px #517180;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: 0;
+  }
+  .hoverBtn-bottom:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    opacity: 0;
+    height: 55px;
+    border-bottom: solid 2px #517180;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    left: 0;
+  }
+  p.credits {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #888;
+    font-size: 16px;
+  }
+  @keyframes open {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 100px;
+      height: 0;
+    }
+    100% {
+      width: 100px;
+      height: 55px;
+    }
+  }
+  @keyframes openB {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100px;
+    }
+  }
+  

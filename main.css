@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width:500px;
+    height:400px;
+    background: black;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+  }
+  p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+  }
+  .box {
+    width: 400px;
+    height: 250px;
+    background: #3084AC;
+    margin: auto;
+    border: 2px solid #256584;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    transition: 500ms ease;
+  }
+  .box:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: '';
+    background: #fff;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+  }
+  .box:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: '';
+    background: #fff;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+  }
+  .box-inner:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: '';
+    background: #fff;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+  }
+  .box-inner:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: '';
+    background: #fff;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+  }
+  .box:hover {
+    border-color: transparent;
+    background: #0f2834;
+  }
+  .box:hover:before {
+    width: 402px;
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+  }
+  .box:hover:after {
+    height: 252px;
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+  }
+  .box:hover .box-inner:after {
+    width: 402px;
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+  }
+  .box:hover .box-inner:before {
+    height: 252px;
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+  }
+  
